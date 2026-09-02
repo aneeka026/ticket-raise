@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* dashboard page */
+@media (max-width: 1024px) {
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Button full width */
+  .reports button {
+    width: 100%;
+  }
+}
